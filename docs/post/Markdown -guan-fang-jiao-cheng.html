@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content=">微信公众号排版工具。">
+<meta property="og:title" content="Markdown 官方教程">
+<meta property="og:description" content=">微信公众号排版工具。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://StarportModeling.github.io/post/Markdown%20-guan-fang-jiao-cheng.html">
+<meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
+<title>Markdown 官方教程</title>
+<link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">Markdown 官方教程</h1>
+<div class="title-right">
+    <a href="https://StarportModeling.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/StarportModeling/StarportModeling.github.io/issues/2" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><blockquote>
+<p>微信公众号排版工具。问题或建议，请公众号留言。<strong><a href="#jump_8">程序员翻身</a></strong></p>
+</blockquote>
+<p>建议使用 <strong>Chrome</strong> 浏览器，体验最佳效果。</p>
+<p>使用微信公众号编辑器有一个十分头疼的问题：粘贴出来的代码，格式错乱，空间小还带行号，而且特别丑。Markdown.com.cn编辑器能够解决这个问题。</p>
+<p>Markdown是一种轻量级的「标记语言」。</p>
+<p>请阅读下方文本熟悉工具使用方法，本文可直接拷贝到微信中预览。</p>
+<h2>1 Markdown.com.cn 简介</h2>
+<ul>
+<li>支持自定义样式的 Markdown 编辑器</li>
+<li>支持微信公众号、知乎和稀土掘金</li>
+<li>点击右上方对应图标，一键复制到各平台</li>
+</ul>
+<h2>2 Markdown语法教程</h2>
+<h3>2.1 标题</h3>
+<p>不同数量的<code class="notranslate">#</code>可以完成不同的标题，如下：</p>
+<h1>一级标题</h1>
+<h2>二级标题</h2>
+<h3>三级标题</h3>
+<h3>2.2 字体</h3>
+<p>粗体、斜体、粗体和斜体，删除线，需要在文字前后加不同的标记符号。如下：</p>
+<p><strong>这个是粗体</strong></p>
+<p><em>这个是斜体</em></p>
+<p><em><strong>这个是粗体加斜体</strong></em></p>
+<p>~这里想用删除线~~</p>
+<p>注：如果想给字体换颜色、字体或者居中显示，需要使用内嵌HTML来实现。</p>
+<h3>2.3 无序列表</h3>
+<p>无序列表的使用，在符号<code class="notranslate">-</code>后加空格使用。如下：</p>
+<ul>
+<li>无序列表 1</li>
+<li>无序列表 2</li>
+<li>无序列表 3</li>
+</ul>
+<p>如果要控制列表的层级，则需要在符号<code class="notranslate">-</code>前使用空格。如下：</p>
+<ul>
+<li>无序列表 1</li>
+<li>无序列表 2
+<ul>
+<li>无序列表 2.1</li>
+<li>无序列表 2.2</li>
+</ul>
+</li>
+</ul>
+<p><strong>由于微信原因，最多支持到二级列表</strong>。</p>
+<h3>2.4 有序列表</h3>
+<p>有序列表的使用，在数字及符号<code class="notranslate">.</code>后加空格后输入内容，如下：</p>
+<ol>
+<li>有序列表 1</li>
+<li>有序列表 2</li>
+<li>有序列表 3</li>
+</ol>
+<h3>2.5 引用</h3>
+<p>引用的格式是在符号<code class="notranslate">&gt;</code>后面书写文字。如下：</p>
+<blockquote>
+<p>读一本好书，就是在和高尚的人谈话。 ——歌德</p>
+</blockquote>
+<blockquote>
+<p>雇用制度对工人不利，但工人根本无力摆脱这个制度。 ——阮一峰</p>
+</blockquote>
+<h3>2.7 链接</h3>
+<p>微信公众号仅支持公众号文章链接，即域名为<code class="notranslate">https://mp.weixin.qq.com/</code>的合法链接。使用方法如下所示：</p>
+<p>对于该论述，欢迎读者查阅之前发过的文章，<a href="https://mp.weixin.qq.com/s/s5IhxV2ooX3JN_X416nidA" rel="nofollow">你是《未来世界的幸存者》么？</a><br>
+<a id="user-content-jump_8"></a></p>
+<h3>2.8 图片</h3>
+<p>插入图片，格式如下：</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/6f623cf529825d1c0b59fa7895c125452c7b15983f653d42a31719d21c5d581f/68747470733a2f2f7777772e6e67696e782e636e2f77702d636f6e74656e742f75706c6f6164732f323032302f30332f7172636f64655f666f725f67685f3832636638376434383266305f3235382e6a7067"><img src="https://camo.githubusercontent.com/6f623cf529825d1c0b59fa7895c125452c7b15983f653d42a31719d21c5d581f/68747470733a2f2f7777772e6e67696e782e636e2f77702d636f6e74656e742f75706c6f6164732f323032302f30332f7172636f64655f666f725f67685f3832636638376434383266305f3235382e6a7067" alt="这里写图片描述" data-canonical-src="https://www.nginx.cn/wp-content/uploads/2020/03/qrcode_for_gh_82cf87d482f0_258.jpg" style="max-width: 100%;"></a></p>
+<p>支持 jpg、png、gif、svg 等图片格式，<strong>其中 svg 文件仅可在微信公众平台中使用</strong>，svg 文件示例如下：</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/df392931bef747380ca8c3cdc622cb8f3c8bb159fd5136e02cfbfbaceba82d43/68747470733a2f2f6d61726b646f776e2e636f6d2e636e2f696d616765732f692d616d2d7376672e737667"><img src="https://camo.githubusercontent.com/df392931bef747380ca8c3cdc622cb8f3c8bb159fd5136e02cfbfbaceba82d43/68747470733a2f2f6d61726b646f776e2e636f6d2e636e2f696d616765732f692d616d2d7376672e737667" alt="" data-canonical-src="https://markdown.com.cn/images/i-am-svg.svg" style="max-width: 100%;"></a></p>
+<p>支持图片<strong>拖拽和截图粘贴</strong>到编辑器中。</p>
+<p>注：支持图片 <em><strong>拖拽和截图粘贴</strong></em> 到编辑器中，仅支持 https 的图片，图片粘贴到微信时会自动上传微信服务器。</p>
+<h3>2.9 分割线</h3>
+<p>可以在一行中用三个以上的减号来建立一个分隔线，同时需要在分隔线的上面空一行。如下：</p>
+<hr>
+<h3>2.10 表格</h3>
+<p>可以使用冒号来定义表格的对齐方式，如下：</p>
+<table role="table">
+<thead>
+<tr>
+<th align="left">姓名</th>
+<th align="center">年龄</th>
+<th align="right">工作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">小可爱</td>
+<td align="center">18</td>
+<td align="right">吃可爱多</td>
+</tr>
+<tr>
+<td align="left">小小勇敢</td>
+<td align="center">20</td>
+<td align="right">爬棵勇敢树</td>
+</tr>
+<tr>
+<td align="left">小小小机智</td>
+<td align="center">22</td>
+<td align="right">看一本机智书</td>
+</tr>
+</tbody>
+</table>
+<h2>3. 特殊语法</h2>
+<h3>3.1 脚注</h3>
+<blockquote>
+<p>支持平台：微信公众号、知乎。</p>
+</blockquote>
+<p>脚注与链接的区别如下所示：</p>
+<div class="highlight highlight-text-md"><pre class="notranslate">链接：<span class="pl-s">[</span>文字<span class="pl-s">]</span><span class="pl-s">(</span><span class="pl-corl">链接</span><span class="pl-s">)</span>
+脚注：<span class="pl-s">[</span>文字<span class="pl-s">]</span><span class="pl-s">(</span><span class="pl-corl">脚注解释</span> <span class="pl-s">"</span><span class="pl-s">脚注名字</span><span class="pl-s">")</span></pre></div>
+<p>有人认为在<a href="https://en.wikipedia.org/wiki/Front-end_web_development" title="Front-end web development" rel="nofollow">大前端时代</a>的背景下，移动端开发（Android、IOS）将逐步退出历史舞台。</p>
+<p><a href="%E6%98%AF%E6%8C%87%E6%8E%8C%E6%8F%A1%E5%A4%9A%E7%A7%8D%E6%8A%80%E8%83%BD%EF%BC%8C%E5%B9%B6%E8%83%BD%E5%88%A9%E7%94%A8%E5%A4%9A%E7%A7%8D%E6%8A%80%E8%83%BD%E7%8B%AC%E7%AB%8B%E5%AE%8C%E6%88%90%E4%BA%A7%E5%93%81%E7%9A%84%E4%BA%BA%E3%80%82" title="什么是全栈工程师">全栈工程师</a>在业务开发流程中起到了至关重要的作用。</p>
+<p>脚注内容请拉到最下面观看。</p>
+<h3>3.2 代码块</h3>
+<blockquote>
+<p>支持平台：微信代码主题仅支持微信公众号！其他主题无限制。</p>
+</blockquote>
+<p>如果在一个行内需要引用代码，只要用反引号引起来就好，如下：</p>
+<p>Use the <code class="notranslate">printf()</code> function.</p>
+<p>在需要高亮的代码块的前一行及后一行使用三个反引号，同时<strong>第一行反引号后面表示代码块所使用的语言</strong>，如下：</p>
+<div class="highlight highlight-source-java"><pre class="notranslate"><span class="pl-c">// FileName: HelloWorld.java</span>
+<span class="pl-k">public</span> <span class="pl-k">class</span> <span class="pl-smi">HelloWorld</span> {
+  <span class="pl-c">// Java 入口程序，程序从此入口</span>
+  <span class="pl-k">public</span> <span class="pl-k">static</span> <span class="pl-smi">void</span> <span class="pl-en">main</span>(<span class="pl-smi">String</span>[] <span class="pl-s1">args</span>) {
+    <span class="pl-smi">System</span>.<span class="pl-s1">out</span>.<span class="pl-en">println</span>(<span class="pl-s">"Hello,World!"</span>); <span class="pl-c">// 向控制台打印一条语句</span>
+  }
+}</pre></div>
+<p>支持以下语言种类：</p>
+<pre class="notranslate"><code class="notranslate">bash
+clojure，cpp，cs，css
+dart，dockerfile, diff
+erlang
+go，gradle，groovy
+haskell
+java，javascript，json，julia
+kotlin
+lisp，lua
+makefile，markdown，matlab
+objectivec
+perl，php，python
+r，ruby，rust
+scala，shell，sql，swift
+tex，typescript
+verilog，vhdl
+xml
+yaml
+</code></pre>
+<p>如果想要更换代码高亮样式，可在上方<strong>代码主题</strong>中挑选。</p>
+<p>其中<strong>微信代码主题与微信官方一致</strong>，有以下注意事项：</p>
+<ul>
+<li>带行号且不换行，代码大小与官方一致</li>
+<li>需要在代码块处标志语言，否则无法高亮</li>
+<li>粘贴到公众号后，用鼠标点代码块内外一次，完成高亮</li>
+</ul>
+<p>diff 不能同时和其他语言的高亮同时显示，且需要调整代码主题为微信代码主题以外的代码主题才能看到 diff 效果，使用效果如下:</p>
+<div class="highlight highlight-source-diff"><pre class="notranslate"><span class="pl-mi1"><span class="pl-mi1">+</span> 新增项</span>
+<span class="pl-md"><span class="pl-md">-</span> 删除项</span></pre></div>
+<p><strong>其他主题不带行号，可自定义是否换行，代码大小与当前编辑器一致</strong></p>
+<h3>3.3 数学公式</h3>
+<blockquote>
+<p>支持平台：微信公众号、知乎。</p>
+</blockquote>
+<p>行内公式使用方法，比如这个化学公式：$\ce{Hg^2+ -&gt;[I-] HgI2 -&gt;[I-] [Hg^{II}I4]^2-}$</p>
+<p>块公式使用方法如下：</p>
+<p>$$H(D_2) = -\left(\frac{2}{4}\log_2 \frac{2}{4} + \frac{2}{4}\log_2 \frac{2}{4}\right) = 1$$</p>
+<p>矩阵：</p>
+<p>$$
+\begin{pmatrix}
+1 &amp; a_1 &amp; a_1^2 &amp; \cdots &amp; a_1^n \\
+1 &amp; a_2 &amp; a_2^2 &amp; \cdots &amp; a_2^n \\
+\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+1 &amp; a_m &amp; a_m^2 &amp; \cdots &amp; a_m^n \\
+\end{pmatrix}
+$$</p>
+<p>公式由于微信不支持，目前的解决方案是转成 svg 放到微信中，无需调整，矢量不失真。</p>
+<p>目前测试如果公式量过大，在 Chrome 下会存在粘贴后无响应，但是在 Firefox 中始终能够成功。</p>
+<h3>3.4 TOC</h3>
+<blockquote>
+<p>支持平台：微信公众号、知乎。</p>
+</blockquote>
+<p>TOC 全称为 Table of Content，列出全部标题。</p>
+<p>[TOC]</p>
+<p>由于微信只支持到二级列表，本工具仅支持二级标题和三级标题的显示。</p>
+<h3>3.5 注音符号</h3>
+<blockquote>
+<p>支持平台：微信公众号。</p>
+</blockquote>
+<p>支持注音符号，用法如下：</p>
+<p>Markdown Nice 这么好用，简直是{喜大普奔|hē hē hē hē}呀！</p>
+<h3>3.6 横屏滑动幻灯片</h3>
+<blockquote>
+<p>支持平台：微信公众号。</p>
+</blockquote>
+<p>通过<code class="notranslate">&lt;![](url),![](url)&gt;</code>这种语法设置横屏滑动滑动片，具体用法如下：</p>
+<p>&lt;<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/8749cd39e521f1451b3c4c44811d5d0c7aa35e582208c0a03f4ab0b418027594/68747470733a2f2f6d61726b646f776e2e636f6d2e636e2f696d616765732f626c75652e6a7067"><img src="https://camo.githubusercontent.com/8749cd39e521f1451b3c4c44811d5d0c7aa35e582208c0a03f4ab0b418027594/68747470733a2f2f6d61726b646f776e2e636f6d2e636e2f696d616765732f626c75652e6a7067" alt="蓝1" data-canonical-src="https://markdown.com.cn/images/blue.jpg" style="max-width: 100%;"></a>,<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/096311e18b7db59b1d3ac949ba556e64aa7b2bb5d873fb4bd88bec43e7c78002/68747470733a2f2f6d61726b646f776e2e636f6d2e636e2f696d616765732f677265656e2e6a7067"><img src="https://camo.githubusercontent.com/096311e18b7db59b1d3ac949ba556e64aa7b2bb5d873fb4bd88bec43e7c78002/68747470733a2f2f6d61726b646f776e2e636f6d2e636e2f696d616765732f677265656e2e6a7067" alt="绿2" data-canonical-src="https://markdown.com.cn/images/green.jpg" style="max-width: 100%;"></a>,<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/c7df3ef18fba4908b8f1b94d34904e5fc2e1842675aec8fe4c592b9e7c30e156/68747470733a2f2f6d61726b646f776e2e636f6d2e636e2e6a7067"><img src="https://camo.githubusercontent.com/c7df3ef18fba4908b8f1b94d34904e5fc2e1842675aec8fe4c592b9e7c30e156/68747470733a2f2f6d61726b646f776e2e636f6d2e636e2e6a7067" alt="红3" data-canonical-src="https://markdown.com.cn.jpg" style="max-width: 100%;"></a>&gt;</p>
+<h2>4 其他语法</h2>
+<h3>4.1 HTML</h3>
+<p>支持原生 HTML 语法，请写内联样式，如下：</p>
+<p><span>橙色居右</span><br>
+<span>橙色居中</span></p>
+<h3>4.2 UML</h3>
+<p>不支持，推荐使用开源工具<code class="notranslate">https://draw.io/</code>制作后再导入图片</p>
+<h2>5 致谢</h2>
+<ul>
+<li>歌词经理 <a href="https://github.com/lyricat/wechat-format" title="灵感来源">wechat-fromat</a></li>
+<li>颜家大少 <a href="http://md.aclickall.com/" title="MdA2All" rel="nofollow">MD2All</a></li>
+</ul></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer">Copyright © <span id="year"></span><a href="https://StarportModeling.github.io"> StarportModeling </a>
+<p>
+<span id="runday"></span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a>
+</p>
+
+<script>
+if(""!=""){
+    var now=new Date();
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("year").innerHTML=now.getFullYear();
+    if(""!=""){document.getElementById("runday").innerHTML=" • "+"网站运行"+diffDay+"天"+" • ";}
+    else{document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";}
+}
+</script>
+</div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n\n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","StarportModeling/StarportModeling.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+</script>
+<script>MathJax = {tex: {inlineMath: [["$", "$"]]}};</script><script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</html>
